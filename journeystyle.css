@@ -94,6 +94,6 @@ body{
     background-color: red;
 }
 
-.group1 {
-    padding-left: 20%;
+.card .group1 {
+    flex: 1;
 }
