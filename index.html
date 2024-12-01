@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSTU Story</title>
+</head>
+<body>
+    <section id="first-page">
+        <div class="left-side">
+            <h1>OUR CSTU STORY</h1>
+            <button id="get-start">Get Start</button>
+            <div class="time-info">time</div>
+        </div>
+
+        <div class="right-side">
+            <nav id="nav-upper">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#our-future">Our Future</a></li>
+                    <li><a href="#our-journey">Our Journey</a></li>
+                </ul>
+            </nav>
+
+            
+        </div>
+    </section>
+    <section id="member-page">
+        <h2>Members</h2>
+        <div class="member-card">
+            
+        </div>
+    </section>
+    <section id="comment">
+        <h3>Post a Comment</h3>
+        <form>
+            <div class="avatar">
+                <img src="" alt="Avatar">
+            </div>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name">
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name">
+
+            <label for="student-id">Student ID</label>
+            <input type="text" id="student-id" name="student-id">
+
+            <label for="faculty">Faculty</label>
+            <select id="faculty" name="faculty">
+                <option value="science">Science</option>
+                <option value="engineering">Engineering</option>
+                <option value="arts">Arts</option>
+            </select>
+
+            <label>Gender</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="lgbtq" name="gender" value="lgbtq">
+            <label for="lgbtq">LGBTQ+</label>
+
+            <label for="review">Review</label>
+            <input type="range" id="review" name="review" min="1" max="5">
+
+            <label for="comment">Write a comment</label>
+            <textarea id="comment" name="comment"></textarea>
+
+            <button type="submit" id="post-comment">Post!</button>
+            <button type="button" id="cancel">Cancel</button>
+        </form>
+    </section>
+
+</body>
+</html>
