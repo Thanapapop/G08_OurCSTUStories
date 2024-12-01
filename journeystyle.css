@@ -16,4 +16,15 @@
     margin-bottom: 20px;
 }
 
+.navbar .menu {
+    gap: 15px;
+}
 
+.navbar a {
+    color: black;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: darkred;
+}
