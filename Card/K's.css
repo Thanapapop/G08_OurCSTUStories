@@ -27,6 +27,7 @@ body{
     gap: 15px;
     border-radius: 4px;
     margin-bottom: 20px;
+    justify-content: right;
 }
 
 .navbar .menu {
