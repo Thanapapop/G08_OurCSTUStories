@@ -3,3 +3,12 @@
     padding: 0;
     box-sizing: boarder-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7d7f63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
