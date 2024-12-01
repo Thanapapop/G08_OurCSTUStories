@@ -24,9 +24,9 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.sbar {
+.card-container {
     float: left;
-    width: 35%;
+    width: 70%;
     background-color: #c7c7bb;
     padding: 20px;
     display: flex;
@@ -45,7 +45,7 @@ body {
 
 .content {
     float: left;
-    width: 65%;
+    width: 30%;
     padding: 20px;
     display: flex;
     flex-direction: column;
