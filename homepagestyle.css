@@ -64,6 +64,10 @@ section {
     transform: rotateY(180deg);
 }
 
+.swiper-slide-active .back{
+    opacity: 1;
+    transform: rotateY(180deg);
+  }
 .swiper-slide button {
     position: absolute;
     bottom: 10px;
@@ -93,6 +97,9 @@ section {
     opacity: 1;
     pointer-events: auto;
 }
+.swiper-slide button:hover{
+    transform: rotateX(-50%) scale(0.98);
+  }
 
 .swiper-pagination-bullet {
     width: 18px;
