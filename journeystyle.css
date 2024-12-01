@@ -32,6 +32,7 @@ body{
 .navbar .menu {
     gap: 15px;
     display: flex;
+    justify-content: right;
 }
 
 .navbar a {
@@ -92,6 +93,7 @@ body{
 .card button:hover {
     background-color: red;
 }
-.group1 {
+
+.card .group1 {
     flex: 1;
 }
