@@ -12,3 +12,14 @@ body {
     align-items: center;
     height: 100vh;
 }
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 600px;
+    background-color: #c7c7bb;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
