@@ -107,3 +107,23 @@ section {
     background-color: #4d6b61;
     border-radius: 14px;
 }
+.header-title{
+    text-align: center;
+    background-color: rgb(57, 95, 66);
+    padding: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    color: #ffffff;
+  }
+  .profile-front img {		
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    border: 2px solid #ccc;
+  }
+  
+  .profile-front .info-front {		
+    text-align: center;
+    margin-top: 180px;
+  }
+  
