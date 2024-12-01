@@ -10,32 +10,37 @@ body{
 }
 
 .container {
-    background-color: #d9e8d7;
-    padding: 20px;
+    background-color: #c4c7c3;
+    width: 90%;
+    height: 90%;
     border-radius: 10px;
-    max-width: 1000px;
-    margin: auto;
-    box-shadow: 0 2px 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px;
 }
 
 .navbar {
     background-color: #f0f0eb;
-    padding: 10px 20px;
+    margin: 0px;
+    padding: 40px;
     justify-content: space-between;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 4px;
     margin-bottom: 20px;
 }
 
 .navbar .menu {
     gap: 15px;
+    display: flex;
 }
 
 .navbar a {
-    color: black;
+    color: #abadab;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .navbar a:hover {
     color: darkred;
+    text-decoration: underline;
 }
