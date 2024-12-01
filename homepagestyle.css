@@ -126,4 +126,71 @@ section {
     text-align: center;
     margin-top: 180px;
   }
+  .swiper-slide .back {		
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 20px;
+    transform: rotateY(180deg);
+  }
+  
+  .card-back {
+    width: 100%;
+    max-width: 350px;
+    background: aliceblue;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-section img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  .skills-section,
+  .contact-section {
+    margin-bottom: 20px;
+  }
+  .skills-section h4,
+  .contact-section h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #444;
+    text-transform: uppercase;
+  }
+  
+  .skill-bar {
+    margin-bottom: 10px;
+  }
+  
+  .skill-bar span {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .bar {
+    background: #e0e0e0;
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .fill {
+    height: 100%;
+    border-radius: 5px;
+    background: #37338d;
+  }
+  
   
