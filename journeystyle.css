@@ -44,3 +44,12 @@ body{
     color: darkred;
     text-decoration: underline;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    flex-grow: 1;
+    padding: 20px;
+}
