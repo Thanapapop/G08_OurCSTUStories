@@ -54,28 +54,49 @@ body {
 }
 
 #nav-upper{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
 }
 
 #nav-upper ul {
+    margin: 0; 
+    padding: 0;
     display: flex; 
-    margin: 0;
     list-style: none;
-    flex: 1;
-    gap: 5%;
+    gap: 25px;
 }
 
-#nav-upper ul li {
+#nav-upper li {
     display: inline;
 }
 
-#nav-upper ul li a {
+#nav-upper a {
     text-decoration: none;
     color: #848177;
     font-weight: light;
     font-size: 2vw;
 }
 
-#nav-upper ul li a:hover {
-    color: #3498db;
+#nav-upper a:hover {
+    color: #53504A;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+#nav-upper i{
+    font-size: 2vw;
+    margin-left: auto;
+}
+
+@media (max-width: 900px) {
+    #nav-upper ul a{
+        display: none;
+    }
+    #nav-upper i{
+        cursor: pointer;
+        margin-left: auto;
+        font-size: 4vh;
+    }
 }
 
