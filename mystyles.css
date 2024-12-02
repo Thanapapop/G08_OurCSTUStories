@@ -46,6 +46,28 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card-content {
+    padding: 15px;
+    position: relative;
+}
+  
+.card-description {
+    font-size: 1rem;
+    color: #555;
+    transition: opacity 0.3s ease;
+}
+  
+.card-hover-text {
+    font-size: 1rem;
+    color: #333;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
 .content {
     float: left;
     width: 30%;
