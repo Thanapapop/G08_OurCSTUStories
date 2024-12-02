@@ -398,7 +398,8 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
     padding-left: 3%;
 }
 
-#faculty{
+#faculties{
+    font-family: "Prompt", sans-serif;
     width: 100%; 
     max-width:48%; 
     padding: 10px;
