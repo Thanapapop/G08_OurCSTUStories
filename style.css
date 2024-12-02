@@ -203,8 +203,8 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 
 .back img{
     object-fit: cover;
-    width: 150px;
-    height: 150px;
+    width: 15vw;
+    height: 15vw;
     border-radius: 100px;
 }
   
@@ -245,19 +245,19 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 
 .profile-section img {
     object-fit: cover;
-    width: 80px;
-    height: 80px;
+    width: 8vw;
+    height: 8vw;
     float: left;
     border-radius: 10px;
-    margin: 10px;
+    margin: 1vw;
     padding: 0;
 }
 
 .profile-section h5 {
-    padding-top: 20px;
+    padding-top: 1vw;
     text-align: left;
     font-weight: 600;
-    font-size: 1.7vh;
+    font-size: 1.8vw;
 }
 
 .skills-section{
@@ -274,19 +274,19 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 
 .skills-section h4,
 .contact-section h4 {
-    font-size: 1rem;
+    font-size: 2vw;
     margin-bottom: 0px;
     color: #444;
     text-transform: uppercase;
 }
   
 .skill-bar {
-    margin-bottom: 10px;
+    margin-bottom: 1vw;
 }
   
-.skill-bar span {
+.skill-bar span , .contact-section span{
     display: block;
-    font-size: 0.8rem;
+    font-size: 1.3vw;
     margin-bottom: 5px;
     color: #555;
 }
@@ -294,8 +294,8 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 .bar {
     background: #202020;
     border-radius: 5px;
-    height: 10px;
-    width: 90%;
+    height: 1vw;
+    width: 30vw;
     position: relative;
 }
   
@@ -306,13 +306,14 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 }
 
 .btn-back{
-    margin-top: 10px;
+    font-size: 3vw;
+    margin-top: 1vw;
     background-color:#C9C5A5 ;
     color: #4D4048;
     border: 0px;
     border-radius: 10px;
     border-width: 0;
-    padding: 15px 50px;
+    padding: 1vw 5vw;
     cursor: pointer;
     transition: 0.3s;
     font-weight: 600;
