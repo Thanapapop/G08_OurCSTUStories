@@ -290,6 +290,13 @@ body {
     text-align: center;
 }
 
+.front .tu-img{
+    float: left;
+    padding: 50px;
+    width: 20%;
+    height: auto;
+}
+
 .swiper-slide {
     position: relative;
     border-radius: 20px;
