@@ -29,19 +29,72 @@ body {
     background-color: #c7c7bb;
     padding: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
-.card1 {
+.card {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-content {
+    padding: 15px;
+    position: relative;
+}
+  
+.card-description {
+    font-size: 1rem;
+    color: #555;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+  
+.card-hover-text {
+    font-size: 1rem;
+    color: #333;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
     text-align: center;
 }
 
-.card2 {
-    text-align: center;
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  
+.card:hover .card-description {
+    opacity: 0; /* Hide default text */
+}
+  
+.card:hover .card-hover-text {
+    opacity: 1; /* Show hover text */
 }
 
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
+  
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+  
 .content {
     float: left;
     width: 30%;
