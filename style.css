@@ -43,6 +43,10 @@ body {
     cursor: pointer;
 }
 
+#time{
+    margin-top: 1vw;
+}
+
 .right-side{
     background-color: #EFE6D9;
     flex: 1;
