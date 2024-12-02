@@ -36,12 +36,14 @@ body {
     gap: 15px;
 }
 
-.card1 {
-    text-align: center;
-}
-
-.card2 {
-    text-align: center;
+.card {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .content {
