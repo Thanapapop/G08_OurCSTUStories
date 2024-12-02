@@ -105,7 +105,7 @@ body {
 #member-page{
     background-color: #C7C7BB;
     width: auto;
-    height: 40vw;
+    height: auto;
     padding: 4%;
     margin: 2%;
     margin-top: 0;
@@ -121,8 +121,8 @@ body {
 
 .front .tu-img{
     float: left;
-    padding: 50px;
-    width: 20%;
+    padding: 6vw;
+    width: 8vw;
     height: auto;
 }
 
@@ -152,8 +152,8 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 .card {
     perspective: 1000px;
     position: relative;
-    width: 35vh;
-    height: 50vh;
+    width: 35vw;
+    height: 50vw;
     margin: auto;
 }
   
@@ -173,10 +173,10 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 }
 
 .front img{
-    margin: -40px;
+    margin: -5vw;
     object-fit: cover;
-    width: 200px;
-    height: 200px;
+    width: 20vw;
+    height: 20vw;
     border-radius: 20px;
 }
 
@@ -184,21 +184,21 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
     text-align: right;
     background-color: #64685C;
     padding: 30px;
-    padding-top: 20px;
+    padding-top: 2vw;
     padding-right: 15px;
     border-top-left-radius: 20px ;
     border-top-right-radius: 20px;
     color: white;
     line-height: 1.1;
-    font-size: 3vh;
+    font-size: 3vw;
     font-weight: 600;
 }
 
 .info-front{
-    margin-top: 70px;
-    font-size: 2vh;
+    margin-top: 8vw;
+    font-size: 2.3vw;
     font-weight: 600;
-    line-height: 0.8;
+    line-height: 0.5;
 }
 
 .back img{
@@ -223,11 +223,13 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 }
   
 .info-more{
+    margin-top: 0;
+    font-size: 2vw;
     background-color: #C9C5A5;
     color: #53504A;
     border-radius: 20px;
     border-width: 0;
-    padding: 8px 50px;
+    padding: 1vw 5vw;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -325,6 +327,7 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 .swiper-button-prev{
     color: wheat;
 }
+
 /*------------------*/
 #comment{
     background-color: #C7C7BB;
@@ -333,6 +336,14 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
     padding: 4%;
     margin: 2%;
     margin-top: 0;
+}
+#comment h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #F9FBF0;
+    font-size: 5vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 #imagePreview{
@@ -524,7 +535,8 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 
 .button-container button {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 3vh;
+    font-weight: 600;
     border: none;
     border-radius: 5px;
     cursor: pointer;
