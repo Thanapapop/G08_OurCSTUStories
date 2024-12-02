@@ -98,7 +98,7 @@ body {
     #nav-upper i{
         cursor: pointer;
         margin-left: auto;
-        font-size: 4vh;
+        font-size: 4vw;
     }
 }
 /*---------------------*/
@@ -335,10 +335,11 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 #comment{
     background-color: #C7C7BB;
     width: auto;
-    height: 40vw;
+    height:auto;
     padding: 4%;
     margin: 2%;
     margin-top: 0;
+    border-radius: 20px;
 }
 #comment h3{
     margin-top: 0;
@@ -364,10 +365,10 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
     display: inline-block;
     background-color: #D9CFCF; 
     color: white; 
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
+    margin-top: 1vw;
+    padding: 1vw 2vw;
+    font-size: 2vw;
+    border-radius: 10vw;
     cursor: pointer;
     transition: background-color 0.3s ease;
     -webkit-box-shadow: 7px 10px 29px -17px rgba(0,0,0,0.75);
@@ -396,29 +397,27 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 
 .group-1, .group-2, .group-3, .group-4, .group-5 {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 1vw;
 }
 
 .group-1 input , .group-2 input{
     font-family: "Prompt", sans-serif;
-    font-size: 2vh;
-    width: 48%;
-    padding: 10px;
+    font-size: 2vw;
+    width: 28vw;
+    padding: 1.2vw;
     border: 0px;
-    border-radius: 20px;
+    border-radius: 20vw;
     box-sizing: border-box;
     transition: border-color 0.3s;
-    padding-left: 3%;
+    padding-left: 3vw;
 }
 
 #faculties{
     font-family: "Prompt", sans-serif;
-    width: 100%; 
-    max-width:48%; 
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 20px;
+    width: 28vw;
+    padding: 1.2vw;
+    font-size: 2vw;
+    border-radius: 20vw;
     border:0px;
     box-sizing: border-box;
 }
@@ -426,11 +425,10 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 .category-option {
     text-align: center;
     display: inline-block;
-    width: 120px;
-    height: 50px; 
     background-color: #EAE6DF;
-    border-radius: 20px;
-    margin: 10px; 
+    border-radius: 1vw;
+    padding: 1vw 1vw;
+    margin: 1vw; 
     transition: all 0.3s ease; 
 }
 
@@ -443,8 +441,8 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    border-radius: 20px;
+    border-radius: 1vw;
+    padding: 1vw 2vw;
     transition: transform 0.3s, background-color 0.3s;
 }
 
@@ -458,8 +456,9 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
     color: #fff;
 }
 
-.category-option label div {
-    font-size: 16px;
+.category-option label {
+    font-size: 2vw;
+    font-weight: 600;
     color: #333;
 }
 
@@ -467,13 +466,18 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
     flex: 1 1 100%;
     display: flex;
     align-items: center; 
-    gap: 10px;
+    gap: 1vw;
+}
+
+.groupall-4 .review{
+    color: #514E4E;
+    font-size: 2.5vw;
 }
 
 .group-4 {
     display: flex;
     flex-direction: row-reverse;
-    gap: 5px; 
+    gap: 1vw; 
     justify-content: flex-end;
 }
 
@@ -482,8 +486,8 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 }
 
 .group-4 label {
-    font-size: 40px;
-    color: #ccc;
+    font-size: 6vw;
+    color: #dfdfdf;
     cursor: pointer;
     transition: color 0.3s ease;
 }
@@ -493,12 +497,12 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 }
 
 .group-4 input:checked ~ label {
-    color: #ffc700;
+    color: #FFC500;
 }
 
 .group-4 label:hover,
 .group-4 label:hover ~ label {
-    color: #deb217;
+    color: #d3ac2d;
 }
 
 
@@ -506,19 +510,18 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 5px;
+    gap: 1vw;
 }
 
 .group-5 textarea {
-    width: 100%;
-    max-width: 800px; 
-    height: 120px;
-    padding: 10px;
+    width: 57vw;
+    height: 20vw;
+    padding: 1vw;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 1vw;
     box-sizing: border-box;
     font-family: "Prompt", sans-serif;
-    font-size: 14px;
+    font-size: 2vw;
     resize: vertical; 
     background-color: #EAE6DF;
 }
@@ -532,16 +535,15 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 .button-container {
     display: flex;
     justify-content: space-between; 
-    width: 100%; 
-    max-width: 800px;
+    width: 87vw; 
 }
 
 .button-container button {
-    padding: 10px 20px;
-    font-size: 3vh;
+    padding: 1vw 2vw;
+    font-size: 3vw;
     font-weight: 600;
     border: none;
-    border-radius: 5px;
+    border-radius: 1vw;
     cursor: pointer;
 }
 
