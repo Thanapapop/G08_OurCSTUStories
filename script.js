@@ -3,8 +3,16 @@ document.querySelectorAll('.info-more').forEach(button => {
       const card = button.closest('.card');
       card.classList.toggle('flip');
     });
-  });
-  const swiper = new Swiper('.swiper', {
+});
+
+document.querySelectorAll('.btn-back').forEach(button => {
+    button.addEventListener('click', () => {
+      const card = button.closest('.card');
+      card.classList.toggle('flip');
+    });
+});
+
+const swiper = new Swiper('.swiper', {
     loop: true,
     navigation: {
       nextEl: '.swiper-button-next',
@@ -43,5 +51,5 @@ document.querySelectorAll('.info-more').forEach(button => {
         slidesPerView: 3,
         },
     },
-  });
+});
   

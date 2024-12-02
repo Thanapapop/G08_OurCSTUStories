@@ -419,3 +419,20 @@ body {
     border-radius: 5px;
     background: #37338d;
 }
+
+.btn-back{
+    background-color:#C9C5A5 ;
+    color: #4D4048;
+    border: 0px;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 15px 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.btn-back:hover{
+    background-color: #746f4b;
+    color: #EFE6D9;
+}
