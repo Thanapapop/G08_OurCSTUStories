@@ -122,3 +122,16 @@ body {
     font-weight: bold;
     text-decoration: underline;
 }
+
+.spirfo{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    color: crimson;
+    text-align: center;
+    padding-bottom: 5px;
+}
