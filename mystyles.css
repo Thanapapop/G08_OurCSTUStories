@@ -164,8 +164,6 @@ h3{
 @media (max-width: 768px) {
     .card {
         width: 90%;
-        flex-direction: column;
-        flex: 40%;
     }
 }
   
@@ -173,11 +171,11 @@ h3{
     .card {
         width: 100%;
         flex-direction: column;
-        flex: 50%;
+        flex: 40%;
     }
 
     .card-container {
-        width: 70%;
+        width: 90%;
     }
   
 }
