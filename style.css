@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Prompt", sans-serif;
+    background-color: #64685C;
+    margin: 0;
+    padding: 0;
+}
+
+#first-page{
+    background-color: #C7C7BB;
+    padding: 25px;
+    margin: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-side {
+    color: #53504A;
+}
+
+.left-side h1 {
+    font-size: 8vw;
+    margin-bottom: 5px;
+}
+
+.left-side button {
+    padding: 10px 25px;
+    border-radius: 15px;
+    background-color: #53504A;
+    color: white;
+    border: none;
+    font-size: 3vw;
+    font-weight: 600;
+    cursor: pointer;
+}

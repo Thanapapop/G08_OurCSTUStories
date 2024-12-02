@@ -221,3 +221,28 @@ section {
   }
   
   
+.navbar {
+  background-color: #f0f0eb;
+  margin: 0px;
+  padding: 40px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.navbar .menu {
+  gap: 15px;
+  display: flex;
+}
+
+.navbar a {
+  color: #abadab;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: darkred;
+  text-decoration: underline;
+}
