@@ -21,7 +21,22 @@ body {
     max-width: 40vw;
     overflow-y: auto; 
 }
+#postData::-webkit-scrollbar {
+    width: 8px; 
+}
 
+#postData::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#postData::-webkit-scrollbar-thumb {
+    background: #C7C7BB; 
+    border-radius: 10px; 
+}
+
+#postData::-webkit-scrollbar-thumb:hover {
+    background: #a0a091;
+}
 .post-card {
     background-color: #fff;
     border-radius: 2vw;
