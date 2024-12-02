@@ -101,12 +101,7 @@ body {
 }
 /*---------------------*/
 /*
-#member-page{
-    background-color: #848177;
-    width: 100%;
-    height: 1000px;
-    padding: 0px;
-}
+
 
 .card{
     position: relative;
@@ -280,7 +275,12 @@ body {
   }
   
 */
-
+#member-page{
+    background-color: #ffffff;
+    width: 100%;
+    height: 1000px;
+    padding: 0px;
+}
 .card {
     perspective: 1000px;
     position: relative;
@@ -345,7 +345,7 @@ body {
     width: 35vh;
     height: 50vh;
     border-radius: 20px;
-    background: #EAE6DF;
+    background-color: #64685C;
     transform: rotateY(180deg);
 }
   
@@ -373,7 +373,7 @@ body {
 }
   
 .profile-section{
-    margin: 0;
+    color: #FFFFFF;
 }
 
 .profile-section img {
@@ -390,18 +390,19 @@ body {
     padding-top: 20px;
     text-align: left;
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 1.7vh;
 }
 
 .skills-section{
-    text-align: left;
-    padding-left: 10px;
     clear: both;
 }
 
 .skills-section,
 .contact-section {
-    margin-bottom: 20px;
+    padding: 1px;
+    background: #EAE6DF;
+    text-align: left;
+    padding-left: 10px;
 }
 
 .skills-section h4,
@@ -438,6 +439,7 @@ body {
 }
 
 .btn-back{
+    margin-top: 10px;
     background-color:#C9C5A5 ;
     color: #4D4048;
     border: 0px;
