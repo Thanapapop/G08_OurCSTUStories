@@ -357,16 +357,34 @@
             </div>
 
             <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name">
+            <input type="text" 
+                    id="first-name" 
+                    name="first-name" 
+                    required
+                    size="10"
+                    placeholder="First Name"
+                    maxlength="20">
 
             <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name">
+            <input type="text" 
+                    id="last-name" 
+                    name="last-name"
+                    required
+                    size="10"
+                    placeholder="Last Name"
+                    maxlength="20">
 
             <label for="student-id">Student ID</label>
-            <input type="text" id="student-id" name="student-id">
+            <input type="text" 
+                    id="student-id" 
+                    name="student-id"
+                    required
+                    size="10"
+                    placeholder="Student ID"
+                    maxlength="20">
 
             <label for="faculty">Faculty</label>
-            <select id="faculty" name="faculty">
+            <select id="faculty" name="faculty" required>
                 <option value="science">Science</option>
                 <option value="engineering">Engineering</option>
                 <option value="arts">Arts</option>
@@ -381,10 +399,10 @@
             <label for="lgbtq">LGBTQ+</label>
 
             <label for="review">Review</label>
-            <input type="range" id="review" name="review" min="1" max="5">
+            <input type="range" id="review" name="review" min="1" max="5" required>
 
             <label for="comment">Write a comment</label>
-            <textarea id="comment" name="comment"></textarea>
+            <textarea id="comment" name="comment" required></textarea>
 
             <button type="submit" id="post-comment">Post!</button>
             <button type="button" id="cancel">Cancel</button>
