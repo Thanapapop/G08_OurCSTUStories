@@ -71,7 +71,7 @@ section {
   backface-visibility: hidden;
   border-radius: 30px;
   inset: 0;
-  background-color: aliceblue;
+  background-color: #EAE6DF;
 }
 .swiper-slide .back{		
   opacity: 0;
@@ -136,7 +136,7 @@ section {
 }
 .header-title{
     text-align: center;
-    background-color: rgb(57, 95, 66);
+    background-color: #64685C;
     padding: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
