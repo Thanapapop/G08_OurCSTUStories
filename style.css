@@ -306,7 +306,7 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
     border-width: 0;
     padding: 1vw 5vw;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.6s;
 }
 
 .info-more:hover{
@@ -395,7 +395,7 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
     border-width: 0;
     padding: 1vw 5vw;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.6s;
     font-weight: 600;
 }
 
