@@ -549,9 +549,21 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 
 #cancel {
     background-color: #e0e0e0;
+    transition: 0.3s;
+}
+
+#cancel:hover{
+    background-color: #ac2020;
+    color: #ece6d3;
 }
 
 #post-comment {
     background-color: #7A7061; 
+    color: white;
+    transition: 0.3s;
+}
+
+#post-comment:hover {
+    background-color: #495c33; 
     color: white;
 }
