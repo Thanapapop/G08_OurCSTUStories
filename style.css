@@ -23,7 +23,7 @@ body {
     margin-right: 0;
     height: 40vw;
     width: auto;
-    border-top-left-radius: 20px;
+    border-top-left-radius: 4vw;
     color: #53504A;
 }
 
@@ -34,7 +34,7 @@ body {
 
 .left-side button {
     padding: 10px 25px;
-    border-radius: 15px;
+    border-radius: 2vw;
     background-color: #53504A;
     color: white;
     border: none;
@@ -52,7 +52,7 @@ body {
     margin-bottom: 0;
     height: 40vw;
     width: auto;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 4vw;
 }
 
 #nav-upper{
@@ -109,8 +109,8 @@ body {
     padding: 4%;
     margin: 2%;
     margin-top: 0;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 4vw;
+    border-bottom-left-radius: 4vw;
 }
 
 #member-page h2{
@@ -130,13 +130,13 @@ body {
 
 .swiper-slide {
     position: relative;
-    border-radius: 20px;
+    border-radius: 2vw;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .swiper-slide:not(.swiper-slide-active) {
     filter: grayscale(20%) brightness(80%);
-    border-radius: 20%;  
+    border-radius: 2vw;  
     -webkit-box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 -moz-box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
@@ -144,7 +144,7 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 }
 .swiper-slide-active {
     filter: grayscale(0) brightness(100%);
-    border-radius: 20px;
+    border-radius: 2vw;
     -webkit-box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 -moz-box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
@@ -154,8 +154,8 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 .card {
     perspective: 1000px;
     position: relative;
-    width: 35vw;
-    height: 50vw;
+    width: 30vw;
+    height: 45vw;
     margin: auto;
 }
   
@@ -170,26 +170,26 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 }
   
 .card .front {
-    border-radius: 20px;
+    border-radius: 2vw;
     background: #EAE6DF;
 }
 
 .front img{
     margin: -5vw;
     object-fit: cover;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 20px;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 2vw;
 }
 
 .header-title{
     text-align: right;
     background-color: #64685C;
-    padding: 30px;
+    padding: 3vw;
     padding-top: 2vw;
-    padding-right: 15px;
-    border-top-left-radius: 20px ;
-    border-top-right-radius: 20px;
+    padding-right: 1vw;
+    border-top-left-radius: 2vw ;
+    border-top-right-radius: 2vw;
     color: white;
     line-height: 1.1;
     font-size: 3vw;
@@ -198,20 +198,14 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 
 .info-front{
     margin-top: 8vw;
-    font-size: 2.3vw;
+    margin-bottom: 0;
+    font-size: 2.1vw;
     font-weight: 600;
     line-height: 0.5;
 }
-
-.back img{
-    object-fit: cover;
-    width: 15vw;
-    height: 15vw;
-    border-radius: 100px;
-}
   
 .card .back {
-    border-radius: 20px;
+    border-radius: 2vw;
     background-color: #64685C;
     transform: rotateY(180deg);
 }
@@ -229,7 +223,7 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
     font-size: 2vw;
     background-color: #C9C5A5;
     color: #53504A;
-    border-radius: 20px;
+    border-radius: 2vw;
     border-width: 0;
     padding: 1vw 5vw;
     cursor: pointer;
@@ -247,10 +241,10 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 
 .profile-section img {
     object-fit: cover;
-    width: 8vw;
-    height: 8vw;
+    width: 6vw;
+    height: 6vw;
     float: left;
-    border-radius: 10px;
+    border-radius: 1vw;
     margin: 1vw;
     padding: 0;
 }
@@ -259,16 +253,21 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
     padding-top: 1vw;
     text-align: left;
     font-weight: 600;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
 }
 
 .skills-section{
     clear: both;
+    margin-bottom: 0;
+}
+.contact-section{
+    margin-top: 0;
 }
 
 .skills-section,
 .contact-section {
-    padding: 1px;
+    margin: 0;
+    padding: 0.2vw;
     background: #EAE6DF;
     text-align: left;
     padding-left: 10px;
@@ -276,7 +275,7 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 
 .skills-section h4,
 .contact-section h4 {
-    font-size: 2vw;
+    font-size: 1.9vw;
     margin-bottom: 0px;
     color: #444;
     text-transform: uppercase;
@@ -288,32 +287,32 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
   
 .skill-bar span , .contact-section span{
     display: block;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     margin-bottom: 5px;
     color: #555;
 }
   
 .bar {
     background: #202020;
-    border-radius: 5px;
+    border-radius: 5vw;
     height: 1vw;
-    width: 30vw;
+    width: 25vw;
     position: relative;
 }
   
 .fill {
     height: 100%;
-    border-radius: 5px;
+    border-radius: 5vw;
     background: #FFFFFF;
 }
 
 .btn-back{
-    font-size: 3vw;
+    font-size: 2.3vw;
     margin-top: 1vw;
     background-color:#C9C5A5 ;
     color: #4D4048;
     border: 0px;
-    border-radius: 10px;
+    border-radius: 10vw;
     border-width: 0;
     padding: 1vw 5vw;
     cursor: pointer;
@@ -339,7 +338,7 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
     padding: 4%;
     margin: 2%;
     margin-top: 0;
-    border-radius: 20px;
+    border-radius: 4vw;
 }
 #comment h3{
     margin-top: 0;
@@ -353,7 +352,7 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 #imagePreview{
     width: 20vw;
     height: 20vw;
-    border-radius: 100%;
+    border-radius: 100vw;
 }
 
 #fileUpload {
