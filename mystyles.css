@@ -68,6 +68,19 @@ body {
     transition: opacity 0.3s ease;
 }
 
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  
+.card:hover .card-description {
+    opacity: 0; /* Hide default text */
+}
+  
+.card:hover .card-hover-text {
+    opacity: 1; /* Show hover text */
+}
+  
 .content {
     float: left;
     width: 30%;
