@@ -109,6 +109,8 @@ body {
     padding: 4%;
     margin: 2%;
     margin-top: 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 #member-page h2{
