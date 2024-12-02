@@ -415,8 +415,8 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
     height: 50px; 
     background-color: #EAE6DF;
     border-radius: 20px;
-    margin: 10px; /* Spacing between options */
-    transition: all 0.3s ease; /* Smooth resizing */
+    margin: 10px; 
+    transition: all 0.3s ease; 
 }
 
 .category-option input[type="radio"] {
@@ -435,7 +435,7 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 
 .category-option:hover label {
     background-color: #cbb794;
-    transform: scale(1.05); /* Slightly enlarges on hover */
+    transform: scale(1.05); 
 }
 
 .category-option input[type="radio"]:checked + label {
@@ -446,4 +446,42 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 .category-option label div {
     font-size: 16px;
     color: #333;
+}
+
+.groupall-4{
+    flex: 1 1 100%;
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
+.group-4 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px; 
+    justify-content: flex-end;
+}
+
+.group-4 input {
+    display: none;
+}
+
+.group-4 label {
+    font-size: 40px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.group-4 label:before {
+    content: '★';
+}
+
+.group-4 input:checked ~ label {
+    color: #ffc700;
+}
+
+.group-4 label:hover,
+.group-4 label:hover ~ label {
+    color: #deb217;
 }
