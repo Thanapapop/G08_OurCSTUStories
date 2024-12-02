@@ -110,3 +110,102 @@ function updateTime() {
 }
 
 setInterval(updateTime, 1000);
+
+document.getElementById("fileUpload").addEventListener("change", function(event) {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+    
+    reader.onload = function(e) {
+        document.getElementById("imagePreview").src = e.target.result;
+    };
+
+    if (file) {
+        reader.readAsDataURL(file);
+    }
+});
+
+document.getElementById("fileUpload").addEventListener("change", function(event) {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+            
+    reader.onload = function(e) {
+        document.getElementById("imagePreview").src = e.target.result;
+    };
+
+    if (file) {
+        reader.readAsDataURL(file);
+    }
+});
+
+document.getElementById("post-comment").addEventListener("click", function(event) {
+    event.preventDefault(); 
+    const firstName = document.getElementById("first-name").value;
+    const lastName = document.getElementById("last-name").value;
+    const gender = document.querySelector('input[name="gender"]:checked')?.value;
+    const rating = document.querySelector('input[name="rating"]:checked')?.value;
+    const comment = document.getElementById("comment-form").value;
+    const imageSrc = document.getElementById("imagePreview").src;
+
+    let title = "";
+    if (gender === "male") {
+        title = "Mr.";
+    } 
+    else if (gender === "female") {
+        title = "Mrs.";
+    } 
+    else if (gender === "lgbtq") {
+        title = "Mx.";
+    }
+
+    const newPost = {
+        image: imageSrc,
+        title: title,
+        firstName: firstName,
+        lastName: lastName,
+        faculty: document.getElementById("faculties").value,
+        rating: rating,
+        comment: comment,
+    };
+
+    let posts = JSON.parse(localStorage.getItem("posts")) || [];
+
+    posts.unshift(newPost);
+
+    localStorage.setItem("posts", JSON.stringify(posts));
+
+    displayPosts(posts);
+});
+
+function displayPosts(posts) {
+    const postDataDiv = document.getElementById("postData");
+
+    postDataDiv.innerHTML = "";
+
+    posts.forEach(post => {
+        const postCard = document.createElement("div");
+        postCard.classList.add("post-card");
+        postCard.innerHTML = `
+                    <img src="${post.image}" alt="User Image">
+                    <div class="post-card-content">
+                        <h3>${post.title} ${post.firstName} ${post.lastName}</h3>
+                        <p>${post.faculty}</p>
+                        <p> <span class="rating">${"⭐".repeat(post.rating)}</span></p>
+                        <p>${post.comment}</p>
+                    </div>
+                `;
+
+        postDataDiv.appendChild(postCard);
+    });
+
+    postDataDiv.scrollTop = postDataDiv.scrollHeight;
+}
+
+window.onload = function() {
+    const posts = JSON.parse(localStorage.getItem("posts")) || [];
+    displayPosts(posts);
+};
+
+document.getElementById("cancel").addEventListener("click", function() {
+    document.querySelector("form").reset();
+    document.getElementById("postData").innerHTML = "";
+});

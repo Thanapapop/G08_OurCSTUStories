@@ -14,6 +14,49 @@ body {
     align-items: flex-start;
 }
 
+#postData {
+    margin-top: 30px;
+    padding: 20px;
+    max-height: 30vw; 
+    overflow-y: auto; 
+}
+
+.post-card {
+    background-color: #fff;
+    border-radius: 2vw;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2vw;
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.post-card img {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 100vw;
+}
+
+.post-card-content {
+    flex-grow: 1;
+}
+
+.post-card h3 {
+    margin: 0;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.post-card p {
+    font-size: 2vw;
+    margin: 5px 0;
+}
+
+.post-card .rating {
+    color: gold;
+}
+
 .left-side {
     background-color: #C7C7BB;
     flex: 1;
