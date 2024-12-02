@@ -80,6 +80,18 @@ body {
 .card:hover .card-hover-text {
     opacity: 1; /* Show hover text */
 }
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
+  
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
   
 .content {
     float: left;
