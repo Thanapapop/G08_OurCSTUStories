@@ -49,3 +49,29 @@ const swiper = new Swiper('.swiper', {
     },
 });
   
+const nextArrow = document.querySelector('.swiper-button-next');
+const prevArrow = document.querySelector('.swiper-button-prev');
+
+nextArrow.style.color = '#33363F';  
+nextArrow.style.fontSize = '30px';
+nextArrow.style.transition = 'color 0.3s ease';  
+
+prevArrow.style.color = '#33363F';  
+prevArrow.style.fontSize = '30px';  
+prevArrow.style.transition = 'color 0.3s ease';  
+
+nextArrow.addEventListener('mouseover', function () {
+  nextArrow.style.color = '#C9C5A5'; 
+});
+
+nextArrow.addEventListener('mouseout', function () {
+  nextArrow.style.color = '#33363F'; 
+});
+
+prevArrow.addEventListener('mouseover', function () {
+  prevArrow.style.color = '#C9C5A5'; 
+});
+
+prevArrow.addEventListener('mouseout', function () {
+  prevArrow.style.color = '#33363F'; 
+});
