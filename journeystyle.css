@@ -52,6 +52,7 @@ body{
     gap: 20px;
     flex-grow: 1;
     padding: 20px;
+    overflow: auto;
 }
 
 .card {
@@ -103,15 +104,19 @@ a {
     color: white;
     font-size: 20px;
 }
-/*
-@media (max-width: 1200px) {
 
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+/*
 @media (max-width: 900px) {
     
 }
-
-@media (max-width: 600px) {
-
-}
 */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
