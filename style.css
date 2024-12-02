@@ -20,14 +20,14 @@ body {
     padding: 4%;
     margin: 2%;
     margin-right: 0;
-    height: 80vh;
+    height: 40vw;
     width: auto;
     border-top-left-radius: 20px;
     color: #53504A;
 }
 
 .left-side h1 {
-    font-size: 8vw;
+    font-size: 6vw;
     margin-bottom: 5px;
 }
 
@@ -48,7 +48,7 @@ body {
     padding: 4%;
     margin: 2%;
     margin-left: 0;
-    height: 80vh;
+    height: 40vw;
     width: auto;
     border-top-right-radius: 20px;
 }
