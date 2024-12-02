@@ -111,6 +111,12 @@ a {
     }
 }
 
+/*
+@media (max-width: 900px) {
+
+}
+*/
+
 @media (max-width: 600px) {
     .grid {
         grid-template-columns: repeat(1, 1fr);
