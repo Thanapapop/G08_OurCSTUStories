@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #7d7f63;
+    background-color: #64685C;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@ body {
 .card-container {
     float: left;
     width: 70%;
-    background-color: #c7c7bb;
+    background-color: #C7C7BB;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -131,7 +131,7 @@ body {
 h3{
     font-size: 48px;
     font-family: 'Times New Roman', Times, serif;
-    color: crimson;
+    color: #7F423D;
     text-align: center;
     padding-bottom: 5px;
 }
