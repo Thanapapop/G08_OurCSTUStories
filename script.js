@@ -18,12 +18,8 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
     spaceBetween: 30, 
-    initialSlide: 3,
+    initialSlide: 0,
     centeredSlides: true,
     speed: 900,
     grabCursor: true,
@@ -33,7 +29,7 @@ const swiper = new Swiper('.swiper', {
         stretch: -45,
         depth: 90,
         modifier: 1,
-        slideShadows: true,
+        slideShadows: false,
     },
     mousewheel: {
         thresholdDelta: 50,
@@ -48,7 +44,7 @@ const swiper = new Swiper('.swiper', {
         slidesPerView: 3,
         },
         1200: {
-        slidesPerView: 3,
+        slidesPerView: 5,
         },
     },
 });
