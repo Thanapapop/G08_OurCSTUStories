@@ -75,3 +75,20 @@ prevArrow.addEventListener('mouseover', function () {
 prevArrow.addEventListener('mouseout', function () {
   prevArrow.style.color = '#33363F'; 
 });
+
+const imageUpload = document.getElementById('fileUpload');
+    const imagePreview = document.getElementById('imagePreview');
+
+    imageUpload.addEventListener('change', function() {
+        const file = imageUpload.files[0];
+        if (file && file.type.startsWith('image')) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        } 
+        else {
+            alert('Please upload a valid image file.');
+        }
+});

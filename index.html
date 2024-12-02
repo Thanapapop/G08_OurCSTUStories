@@ -347,9 +347,15 @@
     <section id="comment">
         <h3>Post a Comment</h3>
         <form>
-            <div class="avatar">
-                <img src="" alt="Avatar">
+            
+            <div id="imageContainer">
+                <img id="imagePreview" src="https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg" alt="Image Preview" style="max-width: 500px; margin-top: 20px;">
+                <label for="fileUpload" class="custom-file-upload">
+                    Choose Image
+                </label>
+                <input type="file" id="fileUpload" accept="image/*">
             </div>
+
             <label for="first-name">First Name</label>
             <input type="text" id="first-name" name="first-name">
 
