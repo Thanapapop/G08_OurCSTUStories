@@ -302,7 +302,7 @@ body {
     width: 35vh;
     height: 50vh;
     border-radius: 20px;
-    background: #fff;
+    background: #EAE6DF;
 }
 
 .front img{
@@ -345,7 +345,7 @@ body {
     width: 35vh;
     height: 50vh;
     border-radius: 20px;
-    background: #f0f0f0;
+    background: #EAE6DF;
     transform: rotateY(180deg);
 }
   
@@ -393,6 +393,12 @@ body {
     font-size: 1vw;
 }
 
+.skills-section{
+    text-align: left;
+    padding-left: 10px;
+    clear: both;
+}
+
 .skills-section,
 .contact-section {
     margin-bottom: 20px;
@@ -418,17 +424,17 @@ body {
 }
   
 .bar {
-    background: #e0e0e0;
+    background: #202020;
     border-radius: 5px;
     height: 10px;
-    width: 100%;
+    width: 90%;
     position: relative;
 }
   
 .fill {
     height: 100%;
     border-radius: 5px;
-    background: #37338d;
+    background: #FFFFFF;
 }
 
 .btn-back{
