@@ -212,6 +212,11 @@ document.getElementById("post-comment").addEventListener("click", function(event
         localStorage.setItem("posts", JSON.stringify(posts));
         
         displayPosts(posts);
+        document.getElementById("postData").scrollIntoView({ behavior: 'smooth', block: 'end' });
+
+        setTimeout(() => {
+            document.getElementById("postData").scrollIntoView({ behavior: 'smooth', block: 'end' });
+        }, 200); 
         document.querySelector("form").reset();
     }
 });
@@ -237,7 +242,9 @@ function displayPosts(posts) {
         postDataDiv.appendChild(postCard);
     });
 
-    postDataDiv.scrollTop = postDataDiv.scrollHeight;
+    setTimeout(() => {
+        postDataDiv.scrollTop = 0;
+    }, 0);
 }
 
 window.onload = function() {
