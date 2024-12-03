@@ -12,9 +12,9 @@ body{
 
 .container {
     background-color: #C7C7BB;
-    width: 90%;
+    width: 96%;
     height: 90%;
-    border-radius: 20px;
+    border-radius: 2vw;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 8px;
@@ -25,7 +25,7 @@ body{
     justify-content: flex-end;
     align-items: center;
     padding: 5vw; 
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 2vw 2vw 0px 0px;
     background-color: #EFE6D9;
 
 }
