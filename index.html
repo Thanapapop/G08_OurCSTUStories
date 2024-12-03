@@ -357,85 +357,102 @@
             </div>
             <div class="form-container">
                 <div class="group-1">
-                    <input type="text" 
-                            id="first-name" 
-                            name="first-name" 
-                            required
-                            size="10"
-                            placeholder="First Name"
-                            maxlength="20">
-
-                    <input type="text" 
-                            id="last-name" 
-                            name="last-name"
-                            required
-                            size="10"
-                            placeholder="Last Name"
-                            maxlength="20">
+                    <div class="input-group">
+                        <input type="text" 
+                                id="first-name" 
+                                name="first-name" 
+                                required
+                                placeholder="First Name"
+                                maxlength="20"
+                                attern="^[ก-ฮa-zA-Z\s]+$">
+                        <div id="first-name-error" class="error-message">โปรดกรอกชื่อเป็นภาษาไทยหรือภาษาอังกฤษ</div>
+                    </div>
+                    <div>
+                        <input type="text" 
+                                id="last-name" 
+                                name="last-name"
+                                required
+                                maxlength="20"
+                                placeholder="Last Name"
+                                pattern="^[ก-ฮa-zA-Z\s]+$">
+                        <div id="last-name-error" class="error-message">โปรดกรอกนามสกุลเป็นภาษาไทยหรือภาษาอังกฤษ</div>
+                    </div>
                 </div>
                 <div class="group-2">
-                <input type="text" 
-                        id="student-id" 
-                        name="student-id"
-                        required
-                        size="10"
-                        placeholder="Student ID"
-                        maxlength="20">
-                <select id="faculties">
-                    <option value="">Faculty</option>
-                    <option value="คณะนิติศาสตร์">คณะนิติศาสตร์</option>
-                    <option value="คณะพาณิชยศาสตร์และการบัญชี">คณะพาณิชยศาสตร์และการบัญชี</option>
-                    <option value="คณะรัฐศาสตร์">คณะรัฐศาสตร์</option>
-                    <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
-                    <option value="คณะสังคมสงเคราะห์ศาสตร์">คณะสังคมสงเคราะห์ศาสตร์</option>
-                    <option value="คณะสังคมวิทยาและมานุษยวิทยา">คณะสังคมวิทยาและมานุษยวิทยา</option>
-                    <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
-                    <option value="คณะวารสารศาสตร์และสื่อสารมวลชน">คณะวารสารศาสตร์และสื่อสารมวลชน</option>
-                    <option value="คณะวิทยาศาสตร์และเทคโนโลยี">คณะวิทยาศาสตร์และเทคโนโลยี</option>
-                    <option value="คณะวิศวกรรมศาสตร์">คณะวิศวกรรมศาสตร์</option>
-                    <option value="คณะสถาปัตยกรรมศาสตร์และการผังเมือง">คณะสถาปัตยกรรมศาสตร์และการผังเมือง</option>
-                    <option value="คณะศิลปกรรมศาสตร์">คณะศิลปกรรมศาสตร์</option>
-                    <option value="คณะแพทยศาสตร์">คณะแพทยศาสตร์</option>
-                    <option value="คณะสหเวชศาสตร์">คณะสหเวชศาสตร์</option>
-                    <option value="คณะทันตแพทยศาสตร์">คณะทันตแพทยศาสตร์</option>
-                    <option value="คณะพยาบาลศาสตร์">คณะพยาบาลศาสตร์</option>
-                    <option value="คณะสาธารณสุขศาสตร์">คณะสาธารณสุขศาสตร์</option>
-                    <option value="คณะเภสัชศาสตร์">คณะเภสัชศาสตร์</option>
-                    <option value="คณะวิทยาการเรียนรู้และศึกษาศาสตร์">คณะวิทยาการเรียนรู้และศึกษาศาสตร์</option>
-                </select>
-                </div>
-
-                <div class="group-3">
-                    <div class="category-option">
-                        <input type="radio" id="male" name="gender" value="male">
-                        <label for="male">Male</label>
+                    <div class="input-group">
+                        <input type="text" 
+                                id="student-id" 
+                                name="student-id"
+                                required
+                                maxlength="10"
+                                minlength="10"
+                                placeholder="Student ID"
+                                pattern="^\d+$"
+                                title="กรุณากรอกรหัสนักศึกษา">
+                        <div id="student-id-error" class="error-message">โปรดกรอกรหัสนักศึกษาจำนวน 10 ตัว</div>
                     </div>
-                    <div class="category-option">
-                        <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Female</label>
-                    </div>
-                    <div class="category-option">
-                        <input type="radio" id="lgbtq" name="gender" value="lgbtq">
-                        <label for="lgbtq">LGBTQ+</label>
+                    <div class="input-group">
+                        <select id="faculties">
+                            <option value="">Faculty</option>
+                            <option value="คณะนิติศาสตร์">คณะนิติศาสตร์</option>
+                            <option value="คณะพาณิชยศาสตร์และการบัญชี">คณะพาณิชยศาสตร์และการบัญชี</option>
+                            <option value="คณะรัฐศาสตร์">คณะรัฐศาสตร์</option>
+                            <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+                            <option value="คณะสังคมสงเคราะห์ศาสตร์">คณะสังคมสงเคราะห์ศาสตร์</option>
+                            <option value="คณะสังคมวิทยาและมานุษยวิทยา">คณะสังคมวิทยาและมานุษยวิทยา</option>
+                            <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+                            <option value="คณะวารสารศาสตร์และสื่อสารมวลชน">คณะวารสารศาสตร์และสื่อสารมวลชน</option>
+                            <option value="คณะวิทยาศาสตร์และเทคโนโลยี">คณะวิทยาศาสตร์และเทคโนโลยี</option>
+                            <option value="คณะวิศวกรรมศาสตร์">คณะวิศวกรรมศาสตร์</option>
+                            <option value="คณะสถาปัตยกรรมศาสตร์และการผังเมือง">คณะสถาปัตยกรรมศาสตร์และการผังเมือง</option>
+                            <option value="คณะศิลปกรรมศาสตร์">คณะศิลปกรรมศาสตร์</option>
+                            <option value="คณะแพทยศาสตร์">คณะแพทยศาสตร์</option>
+                            <option value="คณะสหเวชศาสตร์">คณะสหเวชศาสตร์</option>
+                            <option value="คณะทันตแพทยศาสตร์">คณะทันตแพทยศาสตร์</option>
+                            <option value="คณะพยาบาลศาสตร์">คณะพยาบาลศาสตร์</option>
+                            <option value="คณะสาธารณสุขศาสตร์">คณะสาธารณสุขศาสตร์</option>
+                            <option value="คณะเภสัชศาสตร์">คณะเภสัชศาสตร์</option>
+                            <option value="คณะวิทยาการเรียนรู้และศึกษาศาสตร์">คณะวิทยาการเรียนรู้และศึกษาศาสตร์</option>
+                        </select>
                     </div>
                 </div>
-                <div class="groupall-4">
-                    <label class="review">Review:</label>
-                    <div class="group-4">
-                        <input type="radio" id="star5" name="rating" value="5">
-                        <label for="star5"></label>
-                    
-                        <input type="radio" id="star4" name="rating" value="4">
-                        <label for="star4"></label>
-                    
-                        <input type="radio" id="star3" name="rating" value="3">
-                        <label for="star3"></label>
-                    
-                        <input type="radio" id="star2" name="rating" value="2">
-                        <label for="star2"></label>
-                    
-                        <input type="radio" id="star1" name="rating" value="1">
-                        <label for="star1"></label>
+                <div class="input-group">
+                    <div class="group-3">
+                        <div class="category-option">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="category-option">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="category-option">
+                            <input type="radio" id="lgbtq" name="gender" value="lgbtq">
+                            <label for="lgbtq">LGBTQ+</label>
+                        </div>
+                        <div id="category-option-error" class="error-message">โปรดเลือกเพศ</div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="groupall-4">
+                        <label class="review">Review:</label>
+                        <div class="group-4">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5"></label>
+                        
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4"></label>
+                        
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3"></label>
+                        
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2"></label>
+                        
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1"></label>
+                        </div>
+                        <div id="review-error" class="error-message">โปรดเลือกคะแนน</div>
                     </div>
                 </div>
                 <div class="group-5">
@@ -443,8 +460,10 @@
                                 name="comment-form" 
                                 placeholder="Write a comment..."
                                 rows="4"
-                                cols="50"></textarea>
+                                cols="50"
+                                pattern="^[ก-๙a-zA-Z\s]+$"></textarea>
                 </div>
+
             </div>
             <div class="button-container">
                 <button type="button" id="cancel">Cancel</button>

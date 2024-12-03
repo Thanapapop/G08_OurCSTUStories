@@ -137,43 +137,88 @@ document.getElementById("fileUpload").addEventListener("change", function(event)
     }
 });
 
+function validateInput(inputElement, errorElement) {
+    const isValid = inputElement.checkValidity();  
+    if (!isValid) {
+        errorElement.style.display = 'block';  
+    } else {
+        errorElement.style.display = 'none';  
+    }
+}
+
+document.getElementById('first-name').addEventListener('input', function() {
+    validateInput(this, document.getElementById('first-name-error'));
+});
+
+document.getElementById('last-name').addEventListener('input', function() {
+    validateInput(this, document.getElementById('last-name-error'));
+});
+
+document.getElementById('student-id').addEventListener('input', function() {
+    validateInput(this, document.getElementById('student-id-error'));
+});
+
 document.getElementById("post-comment").addEventListener("click", function(event) {
     event.preventDefault(); 
-    const firstName = document.getElementById("first-name").value;
-    const lastName = document.getElementById("last-name").value;
-    const gender = document.querySelector('input[name="gender"]:checked')?.value;
-    const rating = document.querySelector('input[name="rating"]:checked')?.value;
-    const comment = document.getElementById("comment-form").value;
+    
+    const firstName = document.getElementById("first-name").value.trim();
+    const lastName = document.getElementById("last-name").value.trim();
+    const gender = document.querySelector('input[name="gender"]:checked');
+    const rating = document.querySelector('input[name="rating"]:checked');
+    const comment = document.getElementById("comment-form").value.trim();
     const imageSrc = document.getElementById("imagePreview").src;
 
-    let title = "";
-    if (gender === "male") {
-        title = "Mr.";
+    let isValid = true;
+
+    const genderError = document.getElementById('category-option-error');
+    if (!gender) {
+        genderError.style.display = 'block';
+        isValid = false;
     } 
-    else if (gender === "female") {
-        title = "Mrs.";
-    } 
-    else if (gender === "lgbtq") {
-        title = "Mx.";
+    else {
+        genderError.style.display = 'none';
     }
 
-    const newPost = {
-        image: imageSrc,
-        title: title,
-        firstName: firstName,
-        lastName: lastName,
-        faculty: document.getElementById("faculties").value,
-        rating: rating,
-        comment: comment,
-    };
+    const ratingError = document.getElementById('review-error');
+    if (!rating) {
+        ratingError.style.display = 'block';
+        isValid = false;
+    } 
+    else {
+        ratingError.style.display = 'none';
+    }
 
-    let posts = JSON.parse(localStorage.getItem("posts")) || [];
+    if (firstName === '' || lastName === '') {
+        alert('Please fill in all name fields.');
+        isValid = false;
+    }
 
-    posts.unshift(newPost);
+    if (isValid) {
+        let title = gender.value === "male" ? "Mr." :
+                    gender.value === "female" ? "Mrs." : "Mx.";
 
-    localStorage.setItem("posts", JSON.stringify(posts));
+        const newPost = {
+            image: imageSrc,
+            title: title,
+            firstName: firstName,
+            lastName: lastName,
+            faculty: document.getElementById("faculties").value,
+            rating: rating.value,
+            comment: comment
+        };
 
-    displayPosts(posts);
+        let posts = JSON.parse(localStorage.getItem("posts")) || [];
+        posts.unshift(newPost);
+        localStorage.setItem("posts", JSON.stringify(posts));
+        
+        displayPosts(posts);
+        document.getElementById("postData").scrollIntoView({ behavior: 'smooth', block: 'end' });
+
+        setTimeout(() => {
+            document.getElementById("postData").scrollIntoView({ behavior: 'smooth', block: 'end' });
+        }, 200); 
+        document.querySelector("form").reset();
+    }
 });
 
 function displayPosts(posts) {
@@ -197,7 +242,9 @@ function displayPosts(posts) {
         postDataDiv.appendChild(postCard);
     });
 
-    postDataDiv.scrollTop = postDataDiv.scrollHeight;
+    setTimeout(() => {
+        postDataDiv.scrollTop = 0;
+    }, 0);
 }
 
 window.onload = function() {
@@ -208,4 +255,8 @@ window.onload = function() {
 document.getElementById("cancel").addEventListener("click", function() {
     document.querySelector("form").reset();
     document.getElementById("postData").innerHTML = "";
+});
+
+document.getElementById("get-start").addEventListener("click", function() {
+    document.getElementById("member-page").scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
