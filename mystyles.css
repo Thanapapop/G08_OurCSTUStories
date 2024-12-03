@@ -259,6 +259,10 @@ h3{
         flex-direction: column;
         flex: 30%;
     }
+
+    h3 {
+        margin-top: 0%;
+    }
 }
   
 @media (max-width: 600px) {
