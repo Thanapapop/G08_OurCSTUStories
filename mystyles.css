@@ -245,7 +245,7 @@ h3{
 
     .content {
         width: 90vw;
-        height: 50vw;
+        height: 55vw;
         border-top-left-radius: 2vw;
         border-top-right-radius: 2vw;
         border-bottom-right-radius: 0;
@@ -257,7 +257,7 @@ h3{
     .card-container {
         margin-top: 0;
         width: 90vw;
-        height: 50vw;
+        height: 70vw;
         margin: 2vw;
         margin-top: 0;
         border-top-left-radius: 0;
@@ -269,6 +269,8 @@ h3{
         width: 100%;
         flex-direction: column;
         flex: 30%;
+        width: 15vw;
+        height: 30vw;
     }
 
     h3 {
@@ -285,7 +287,7 @@ h3{
         position: absolute;
         font-size: 600;
         bottom: 5vw;
-        font-size: 1.5vw;
+        font-size: 2.2vw;
         color: #ffffff;
         transition: opacity 0.3s ease;
         text-align: center;
@@ -300,21 +302,60 @@ h3{
         position: absolute; 
         top: 0%; 
         left: 50%; 
-        transform: translate(-50%, -115%); 
+        transform: translate(-50%, -140%); 
         opacity: 0;
         transition: opacity 0.3s ease;
+    }
+    .spirfo{
+        font-size: 2vw;
+        padding: 2vw;
     }
 }
   
 @media (max-width: 600px) {
     .card {
-        width: 100%;
-        flex-direction: column;
-        flex: 40%;
+        background-color: #EFE6D9;
+        width: 15vw;
+        height: 30vw;
+        border-radius: 3vw;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .card-container {
-        width: 90%;
-    } 
+        margin-top: 0;
+        width: 90vw;
+        height: 75vw;
+        margin: 2vw;
+        margin-top: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 2vw;
+        order: 2;
+    }
+    .card-description {
+        position: absolute;
+        font-size: 600;
+        bottom: 5vw;
+        font-size: 2.2vw;
+        color: #ffffff;
+        transition: opacity 0.3s ease;
+        text-align: center;
+        text-transform: uppercase; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .card-hover-text {
+        font-size: 1.6vw;
+        color: #333;
+        text-align: center;
+        position: absolute; 
+        top: 0%; 
+        left: 50%; 
+        transform: translate(-50%, -125%); 
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
 }
 
