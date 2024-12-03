@@ -22,21 +22,12 @@ header {
     color: white;
   }
   
-button {
-    background: none;
-    color: rgb(48, 35, 35);
-    border: none;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 30px;
-    cursor: pointer;
-  }
- 
 #nav-upper {
     display: flex; 
     justify-content: flex-end;
     align-items: center;
-    padding: 2vw; 
+    padding: 0vw; 
+    margin-bottom: 0;
 }
     
 #nav-upper ul {
@@ -96,15 +87,23 @@ button {
     #nav-upper li {
         display: inline-block;
         text-align: center;
+        margin-top: 2vw;
+        margin-bottom: 0;
         width: 100%; 
     }
     
     #nav-upper a {
-        color: #848177;
+        color: #EFE6D9;
         font-size: 3vw; 
         display: block;
         padding: 1vw 0;
         text-decoration: none;
+    }
+
+    #nav-upper a:hover{
+        color: #ffffff;
+        text-decoration: underline;
+        text-underline-offset: 8px;
     }
     
     #nav-upper i {
@@ -126,24 +125,21 @@ button {
     border-top-left-radius: 2vw;
     border-bottom-left-radius: 2vw;
     width: 90vw;
-    height: 80vw;
+    height: 75vw;
     background-color: #C7C7BB;
     padding: 2vw;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 1vw;
+    gap: 4vw;
     margin: 2vw; 
     margin-right: 0;
 }
 
 .card {
     background-color: #EFE6D9;
-    width: 20vw;
-    height: 25vw;
-    flex: 1 1 calc(50% - 20px);
+    width: 15vw;
+    height: 20vw;
     border-radius: 3vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -155,7 +151,7 @@ button {
     margin: 2vw;
     margin-left: 0;
     width: 100vw;
-    height: 80vw;
+    height: 75vw;
     padding: 2vw;
     display: flex;
     flex-direction: column;
@@ -211,17 +207,16 @@ button {
 } 
 
 .spirfo{
-
+    margin-top: 0;
     margin-left: 2vw;
-    font-size: 1.7vw;
+    font-size: 1.6vw;
 }
 
 h3{
     font-size: 5vw;
-
     color: #7F423D;
     text-align: left;
-    margin-top: 7vw;
+    margin-top: 0vw;
     padding-bottom: 5px;
 }
 
@@ -238,11 +233,12 @@ h3{
     }
 
     .content {
+        width: 90vw;
+        height: 50vw;
         border-top-left-radius: 2vw;
         border-top-right-radius: 2vw;
         margin: 2vw;
         margin-bottom: 0;
-        width: 90%;
         
     }
 
