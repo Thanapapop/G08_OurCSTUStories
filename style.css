@@ -90,10 +90,11 @@ body {
 .left-side {
     background-color: #C7C7BB;
     flex: 1;
-    padding: 4%;
-    margin: 2%;
+    padding: 4vw;
+    margin: 2vw;
     margin-bottom: 0;
     margin-right: 0;
+    margin-top: 0;
     height: 40vw;
     width: auto;
     border-top-left-radius: 2vw;
@@ -131,10 +132,11 @@ body {
 .right-side{
     background-color: #EFE6D9;
     flex: 1;
-    padding: 4%;
-    margin: 2%;
+    padding: 4vw;
+    margin: 2vw;
     margin-left: 0;
     margin-bottom: 0;
+    margin-top: 0;
     height: 40vw;
     width: auto;
     border-top-right-radius: 2vw;
@@ -149,7 +151,7 @@ body {
 
 #nav-upper ul {
     position: absolute;
-    top: 8vw;
+    top: 6vw;
     right: 11vw;
     padding: 0;
     display: flex; 
