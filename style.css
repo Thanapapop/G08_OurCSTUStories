@@ -293,7 +293,9 @@ body {
 
 .front .tu-img{
     float: left;
-    padding: 6vw;
+    padding: 0vw;
+    margin-top: 2vw;
+    margin-left: 1.5vw;
     width: 8vw;
     height: auto;
 }
