@@ -6,11 +6,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2e332d;
+    background-color: #64685C;
 }
 
 .container {
-    background-color: #c4c7c3;
+    background-color: #C7C7BB;
     width: 90%;
     height: 90%;
     border-radius: 10px;
@@ -20,7 +20,7 @@ body{
 }
 
 .navbar {
-    background-color: #f0f0eb;
+    background-color: #EFE6D9;
     margin: 0px;
     padding: 40px;
     justify-content: space-between;
@@ -42,7 +42,7 @@ body{
 }
 
 .navbar a:hover {
-    color: darkred;
+    color: #53504A;
     text-decoration: underline;
 }
 
@@ -56,13 +56,13 @@ body{
 }
 
 .card {
-    background-color: #f0f0eb;
+    background-color: #EAE6DF;
     border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     padding: 15px;
-    border-bottom: 30px solid darkred;
+    border-bottom: 30px solid #6D1919;
 }
 
 .card img {
@@ -79,7 +79,7 @@ body{
 }
 
 .card button {
-    background-color: darkred;
+    background-color: #6D1919;
     color: white;
     border: none;
     border-radius: 4px;
@@ -92,7 +92,7 @@ body{
 }
 
 .card button:hover {
-    background-color: red;
+    background-color: rgb(139, 29, 29);
 }
 
 .card .group1 {
