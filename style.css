@@ -646,6 +646,22 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
     color: white;
 }
 
+@media (max-width: 900px) {
+    .group-5 textarea {
+        height: 4rem;
+    }
+
+    #comment {
+        padding-top: 2%;
+        padding-bottom: 3%;
+        overflow-y: auto;
+    }
+
+    .form-container {
+        gap: 0.7rem;
+    }
+
+}
 .error-message{
     font-size: 1.5vw;
     color: red;
