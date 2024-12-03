@@ -21,36 +21,38 @@ header {
     color: white;
   }
   
-  button {
+button {
     background: none;
     color: rgb(48, 35, 35);
     border: none;
+    display: flex;
+    justify-content: flex-end;
     font-size: 20px;
     cursor: pointer;
-    margin-left: 430px;
   }
-  
-  nav ul {
+nav ul {
     list-style: none;
     margin-top: -22px;
-    margin-left: 150px;
+    margin-right: 25px;
     padding: 0;
     display: flex;
+    justify-content: flex-end;
   }
   
-  nav ul li {
+nav ul li {
     margin: 0 10px;
+    white-space: nowrap;
   }
   
-  nav ul li a {
+nav ul li a {
     color: #848177;
     text-decoration: none;
   }
-  nav ul li a:hover{
+nav ul li a:hover{
     color: #53504A;
   }
   
-  .hidden {
+.hidden {
     display: none;
   }
 .container {

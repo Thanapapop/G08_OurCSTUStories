@@ -8,7 +8,7 @@ document.querySelectorAll('.info-more').forEach(button => {
 document.getElementById("toggleButton").addEventListener("click", () => {
     const navBar = document.getElementById("navBar");
     navBar.classList.toggle("hidden");
-  });
+});
 
 document.querySelectorAll('.btn-back').forEach(button => {
     button.addEventListener('click', () => {
