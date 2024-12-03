@@ -157,7 +157,6 @@ body{
     max-width: 420px; 
     margin: 1vw auto; 
     width: calc(50% - 1vw);
-
 }
 
 .card img {
@@ -168,15 +167,14 @@ body{
 }
 
 .card h3 {
-    font-weight: 750;
-    font-size: 1.5vw;
-    margin: 2vw;
-
     text-align: center;
+    font-size: 2.1vw;
+    font-weight: 600;
+    margin-bottom: 2vw;
 }
 
 .card a {
-    font-size: 1vw;
+    font-size: 1.5vw;
     font-weight: 600;
     background-color: #6D1919;
     color: white;
@@ -210,10 +208,14 @@ a {
         width: calc(50% - 1vw);
     }
     .card h3 {
-        font-size: 1.7vw;
+        text-align: left;
+        margin-left: 3vw;
+        margin-top: 3vw;
+        font-size: 3vw;
+        font-weight: 600;
     }
     .card a {
-        font-size: 1.4vw;
+        font-size: 2vw;
     }
     .grid{
         padding: 2vw;
