@@ -141,7 +141,7 @@ a {
     color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 764px) {
     .card {
         display: grid;
         width: 100%;
@@ -152,7 +152,4 @@ a {
         border-radius: 0%;
     }
 
-    img {
-        padding-left: 1rem;
-    }
 }
