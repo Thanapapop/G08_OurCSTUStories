@@ -6,11 +6,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2e332d;
+    background-color: #64685C;
 }
 
 .container {
-    background-color: #c4c7c3;
+    background-color: #C7C7BB;
     width: 90%;
     height: 90%;
     border-radius: 10px;
@@ -47,7 +47,7 @@ body{
 }
 
 .profile-detail {
-    background-color: #f0f0eb;
+    background-color: #EAE6DF;
     padding: 20px;
     border-radius: 8px;
     display: flex;

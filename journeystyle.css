@@ -24,7 +24,10 @@ body{
     display: flex; 
     justify-content: flex-end;
     align-items: center;
-    padding: 2vw; 
+    padding: 5vw; 
+    border-radius: 20px 20px 0px 0px;
+    background-color: #EFE6D9;
+
 }
     
 #nav-upper ul {
