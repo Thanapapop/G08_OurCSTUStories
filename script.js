@@ -5,6 +5,11 @@ document.querySelectorAll('.info-more').forEach(button => {
     });
 });
 
+document.getElementById("toggleButton").addEventListener("click", () => {
+    const navBar = document.getElementById("navBar");
+    navBar.classList.toggle("hidden");
+  });
+
 document.querySelectorAll('.btn-back').forEach(button => {
     button.addEventListener('click', () => {
       const card = button.closest('.card');
@@ -265,4 +270,4 @@ document.querySelectorAll('#nav-upper a').forEach(link => {
     if (link.href === window.location.href) {
         link.classList.add('active');
     }
-});
+}); 
