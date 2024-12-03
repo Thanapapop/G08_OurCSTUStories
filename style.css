@@ -159,7 +159,13 @@ body {
     font-size: 2vw;
 }
 
-#nav-upper a:hover {
+#nav-upper a:hover,#nav-upper a:focus {
+    color: #53504A;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+#nav-upper a.active {
     color: #53504A;
     text-decoration: underline;
     text-underline-offset: 8px;
