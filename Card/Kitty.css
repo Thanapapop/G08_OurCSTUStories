@@ -33,7 +33,6 @@ body{
     
 #nav-upper ul {
     position: absolute;
-    top: 6vw;
     right: 11vw;
     padding: 0;
     display: flex; 
