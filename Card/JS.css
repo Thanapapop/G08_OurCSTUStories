@@ -25,7 +25,7 @@ body{
     display: flex; 
     justify-content: flex-end;
     align-items: center;
-    padding: 5vw; 
+    padding: 4vw; 
     border-radius: 20px 20px 0px 0px;
     background-color: #EFE6D9;
 
@@ -33,7 +33,7 @@ body{
     
 #nav-upper ul {
     position: absolute;
-    top: 8vw;
+    top: 6vw;
     right: 11vw;
     padding: 0;
     display: flex; 
