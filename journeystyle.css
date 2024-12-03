@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Mitr:wght@200;300;400;500;600;700&display=swap');
 body{
-    font-family: Arial, sans-serif;
+    font-family: "Golos Text", sans-serif;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -32,7 +32,7 @@ body{
     
 #nav-upper ul {
     position: absolute;
-    top: 8vw;
+    top: 6vw;
     right: 11vw;
     padding: 0;
     display: flex; 
@@ -111,6 +111,7 @@ body{
     border-radius: 4px;
     padding: 15px 70px;
     margin: 30px;
+    margin-left: 5vw;
     cursor: pointer;
     margin-top: auto;
     text-align: center;
