@@ -78,6 +78,7 @@ body{
     align-items: flex-start;
     position: relative;
     margin: 40px;
+    overflow: auto;
 }
 
 .back-button {
