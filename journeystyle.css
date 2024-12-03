@@ -14,37 +14,58 @@ body{
     background-color: #C7C7BB;
     width: 90%;
     height: 90%;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 8px;
 }
 
-.navbar {
-    background-color: #EFE6D9;
-    margin: 0px;
-    padding: 40px;
-    justify-content: space-between;
+#nav-upper {
+    display: flex; 
+    justify-content: flex-end;
     align-items: center;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    padding: 2vw ;
+    background-color: #EFE6D9;
+    border-radius: 20px 20px 0px 0px;
+    
 }
 
-.navbar .menu {
-    gap: 15px;
-    display: flex;
-    justify-content: right;
+#nav-upper ul {
+    position: absolute;
+    top: 3vw;
+    right: 11vw;
+    padding: 0;
+    display: flex; 
+    list-style: none;
+    gap: 3vw; 
 }
 
-.navbar a {
-    color: #abadab;
-    font-weight: bold;
+#nav-upper li {
+    display: inline;
+}
+
+#nav-upper a {
     text-decoration: none;
+    color: #848177;
+    font-weight: 300; 
+    font-size: 2vw; 
 }
 
-.navbar a:hover {
+#nav-upper a:hover,
+#nav-upper a:focus,
+#nav-upper a.active {
     color: #53504A;
     text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+#nav-upper i {
+    font-size: 2vw;
+    position: absolute;
+    top: 9vw;
+    right: 5vw;
+    padding: 0;
+    display: flex; 
 }
 
 .grid {
