@@ -123,7 +123,13 @@ header {
         text-decoration: none;
     }
 
-    #nav-upper a:hover{
+    #nav-upper a:hover,
+    #nav-upper a:focus{
+        color: #ffffff;
+        text-decoration: underline;
+        text-underline-offset: 8px;
+    }
+    #nav-upper a.active {
         color: #ffffff;
         text-decoration: underline;
         text-underline-offset: 8px;

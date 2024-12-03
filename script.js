@@ -1,4 +1,10 @@
 
+document.querySelectorAll('#nav-upper a').forEach(link => {
+    if (link.pathname === window.location.pathname) {
+        link.classList.add('active');
+    }
+});
+
 document.querySelectorAll('.info-more').forEach(button => {
     button.addEventListener('click', () => {
       const card = button.closest('.card');
