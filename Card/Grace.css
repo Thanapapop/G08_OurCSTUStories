@@ -153,4 +153,8 @@ a {
         border-radius: 0%;
     }
 
+    .red-line {
+        display: none;
+    }
+
 }
