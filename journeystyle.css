@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Mitr:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .fade-in {
     animation: fadeIn 1s ease-in;
 }
@@ -25,11 +32,6 @@
     }
 }
   
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body{
     font-family: "Prompt", sans-serif;
     padding: 0;
@@ -143,13 +145,19 @@ body{
 .card {
     text-align: center;
     background-color: #EAE6DF;
-    border-radius: 20px;
+    border-radius: 3vw;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    border-bottom: 30px solid #6D1919; /*red line*/
+    border-bottom: 1vw solid #6D1919;
+    padding: 2vw;
+    height: auto;
+    width: 48%;
+    max-width: 420px; 
+    margin: 1vw auto; 
+    width: calc(50% - 1vw);
+
 }
 
 .card img {
@@ -162,8 +170,9 @@ body{
 
 .card h3 {
     font-weight: 750;
-    font-size: 25px;
-    margin: 20px;
+    font-size: 1.5vw;
+    margin: 2vw;
+
     text-align: center;
 }
 
@@ -173,10 +182,11 @@ body{
     background-color: #6D1919;
     color: white;
     border: none;
-    border-radius: 4px;
-    padding: 15px 70px;
-    margin: 30px;
-    margin-left: 5vw;
+    border-radius: 4vw;
+    padding: 1vw 3vw;
+    margin: 1vw auto;
+    margin-bottom: 1vw;
+
     cursor: pointer;
     text-align: center;
     flex-direction: column;
