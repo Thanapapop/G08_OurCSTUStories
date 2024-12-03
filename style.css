@@ -258,19 +258,6 @@ body {
        display: none;
     }
 }
-
-
-/*
-@media (max-width: 900px) {
-    #nav-upper ul a{
-        display: none;
-    }
-    #nav-upper i{
-        cursor: pointer;
-        margin-left: auto;
-        font-size: 4vw;
-    }
-}
 /*---------------------*/
 #member-page{
     background-color: #C7C7BB;
@@ -439,10 +426,10 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 .skills-section,
 .contact-section {
     margin: 0;
-    padding: 0.2vw;
+    padding: 1vw;
     background: #EAE6DF;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 2vw;
 }
 
 .skills-section h4,
@@ -459,7 +446,7 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
   
 .skill-bar span , .contact-section span{
     display: block;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     margin-bottom: 5px;
     color: #555;
 }
@@ -487,6 +474,7 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
     border-radius: 10vw;
     border-width: 0;
     padding: 1vw 5vw;
+    margin: 2vw;
     cursor: pointer;
     transition: 0.6s;
     font-weight: 600;
@@ -501,6 +489,19 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 .swiper-button-prev{
     color: wheat;
 }
+
+@media (max-width: 600px) {
+    .btn-back{
+        font-size: 2vw;
+        padding: 1vw 3vw;
+    }
+    .skills-section,
+    .contact-section {
+        padding: 0.5vw;
+    }
+}
+
+
 
 /*------------------*/
 #comment{
@@ -534,7 +535,7 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 .custom-file-upload {
     text-align: center;
     display: inline-block;
-    background-color: #D9CFCF; 
+    background-color: #e2cfcf; 
     color: white; 
     margin-top: 1vw;
     padding: 1vw 2vw;
@@ -542,9 +543,7 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
     border-radius: 10vw;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    -webkit-box-shadow: 7px 10px 29px -17px rgba(0,0,0,0.75);
-    -moz-box-shadow: 7px 10px 29px -17px rgba(0,0,0,0.75);
-    box-shadow: 7px 10px 29px -17px rgba(0,0,0,0.75);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .custom-file-upload:hover {
@@ -569,12 +568,15 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 .group-1, .group-2, .group-3, .group-4, .group-5 {
     display: flex;
     gap: 1vw;
+    flex-wrap: wrap;
 }
 
 .group-1 input , .group-2 input{
     font-family: "Prompt", sans-serif;
     font-size: 2vw;
     width: 27vw;
+    flex: 1 1 45%;
+    min-width: 200px;
     padding: 1.2vw;
     border: 0px;
     border-radius: 20vw;
@@ -586,6 +588,8 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 #faculties{
     font-family: "Prompt", sans-serif;
     width: 27vw;
+    flex: 1 1 45%;
+    min-width: 200px;
     padding: 1.2vw;
     font-size: 2vw;
     border-radius: 20vw;
@@ -594,6 +598,8 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 }
 
 .category-option {
+    width: 12vw; 
+    height: auto;
     text-align: center;
     display: inline-block;
     background-color: #EAE6DF;
@@ -685,7 +691,7 @@ box-shadow: 27px 25px 69px -50px rgba(0,0,0,0.75);
 }
 
 .group-5 textarea {
-    width: 57vw;
+    width: 50vw;
     height: 20vw;
     padding: 1vw;
     border: 1px solid #ccc;
