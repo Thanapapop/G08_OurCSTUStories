@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Mitr:wght@200;300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Golos Text", sans-serif;
     background-color: #64685C;
     display: flex;
     justify-content: center;
@@ -27,12 +28,12 @@ button {
     border: none;
     display: flex;
     justify-content: flex-end;
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
   }
 nav ul {
     list-style: none;
-    margin-top: -22px;
+    margin-top: -37px;
     margin-right: 25px;
     padding: 0;
     display: flex;
@@ -41,6 +42,8 @@ nav ul {
   
 nav ul li {
     margin: 0 10px;
+    font-size: 35px;
+
     white-space: nowrap;
   }
   
@@ -59,7 +62,7 @@ nav ul li a:hover{
     display: flex;
     width: 90%;
     height: 90%;
-    background-color: #c7c7bb;
+    background-color: #EFE6D9;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -128,11 +131,11 @@ nav ul li a:hover{
 .content {
     float: left;
     width: 30%;
-    padding: 20px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: #F5F6F1;
+    background-color: #EFE6D9;
 }
 
 .navcontainer {
@@ -156,12 +159,12 @@ nav ul li a:hover{
 
 .spirfo{
     font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+    color: #7C7878;
+    font-weight: 600;
 }
 
 h3{
     font-size: 48px;
-    font-family: 'Times New Roman', Times, serif;
     color: #7F423D;
     text-align: center;
     padding-bottom: 5px;
