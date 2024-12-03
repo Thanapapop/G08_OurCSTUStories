@@ -158,10 +158,6 @@ document.getElementById('student-id').addEventListener('input', function() {
     validateInput(this, document.getElementById('student-id-error'));
 });
 
-document.getElementById('comment-form').addEventListener('input', function() {
-    validateInput(this, document.getElementById('comment-error'));
-});
-
 document.getElementById("post-comment").addEventListener("click", function(event) {
     event.preventDefault(); 
     
