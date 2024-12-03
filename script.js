@@ -261,10 +261,8 @@ document.getElementById("get-start").addEventListener("click", function() {
     document.getElementById("member-page").scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
-document.querySelectorAll("#nav-upper a").forEach(link => {
-    if (window.location.hash === link.getAttribute('href')) {
-        link.classList.add("active");
-    } else {
-        link.classList.remove("active");
+document.querySelectorAll('#nav-upper a').forEach(link => {
+    if (link.href === window.location.href) {
+        link.classList.add('active');
     }
 });
