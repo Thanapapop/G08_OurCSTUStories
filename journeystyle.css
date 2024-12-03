@@ -12,9 +12,9 @@ body{
 
 .container {
     background-color: #C7C7BB;
-    width: 90%;
+    width: 96%;
     height: 90%;
-    border-radius: 20px;
+    border-radius: 2vw;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 8px;
@@ -25,7 +25,7 @@ body{
     justify-content: flex-end;
     align-items: center;
     padding: 5vw; 
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 2vw 2vw 0px 0px;
     background-color: #EFE6D9;
 
 }
@@ -84,7 +84,7 @@ body{
     display: flex;
     align-items: center;
     padding: 15px;
-    border-bottom: 30px solid #6D1919;
+    border-bottom: 30px solid #6D1919; /*red line*/
 }
 
 .card img {
@@ -102,7 +102,7 @@ body{
     text-align: center;
 }
 
-.card button {
+.card a {
     font-family: "Golos Text", sans-serif;
     font-weight: 600;
     background-color: #6D1919;
@@ -118,7 +118,7 @@ body{
     flex-direction: column;
 }
 
-.card button:hover {
+.card a:hover {
     background-color: rgb(139, 29, 29);
 }
 
@@ -128,7 +128,6 @@ body{
 
 a {
     text-decoration: none;
-    color: white;
     font-size: 20px;
 }
 
