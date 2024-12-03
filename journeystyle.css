@@ -1,4 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Mitr:wght@200;300;400;500;600;700&display=swap');
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+  
+.fade-out {
+    animation: fadeOut 1s ease-out;
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+  
 body{
     font-family: "Golos Text", sans-serif;
     margin: 0;
@@ -80,10 +106,9 @@ body{
 .card {
     background-color: #EAE6DF;
     border-radius: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 65px; /*ขนาดการ์ด*/
     border-bottom: 30px solid #6D1919; /*red line*/
 }
 
