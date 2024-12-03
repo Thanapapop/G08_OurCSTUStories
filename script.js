@@ -256,3 +256,7 @@ document.getElementById("cancel").addEventListener("click", function() {
     document.querySelector("form").reset();
     document.getElementById("postData").innerHTML = "";
 });
+
+document.getElementById("get-start").addEventListener("click", function() {
+    document.getElementById("member-page").scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
