@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Mitr:wght@200;300;400;500;600;700&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,13 +22,14 @@ header {
     color: white;
   }
   
-  button {
+button {
     background: none;
     color: rgb(48, 35, 35);
     border: none;
-    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
     cursor: pointer;
-    margin-left: 430px;
   }
  
 #nav-upper {
@@ -115,6 +117,7 @@ header {
     width: 100%;
     height: 100%;
     
+
 }
 
 .card-container {
@@ -179,8 +182,11 @@ header {
 
 .content {
     float: left;
+
     width: 70%;
     padding: 20px;
+
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -207,12 +213,14 @@ header {
 }
 
 .spirfo{
+
     margin-left: 2vw;
     font-size: 1.7vw;
 }
 
 h3{
     font-size: 5vw;
+
     color: #7F423D;
     text-align: left;
     margin-top: 7vw;
