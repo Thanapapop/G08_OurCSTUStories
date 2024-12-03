@@ -4,6 +4,7 @@ document.querySelectorAll('.info-more').forEach(button => {
       card.classList.toggle('flip');
     });
 });
+
 document.querySelectorAll('.btn-back').forEach(button => {
     button.addEventListener('click', () => {
       const card = button.closest('.card');

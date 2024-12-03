@@ -24,33 +24,30 @@ body{
     display: flex; 
     justify-content: flex-end;
     align-items: center;
-    padding: 2vw ;
-    background-color: #EFE6D9;
-    border-radius: 20px 20px 0px 0px;
-    
+    padding: 2vw; 
 }
-
+    
 #nav-upper ul {
     position: absolute;
-    top: 3vw;
+    top: 8vw;
     right: 11vw;
     padding: 0;
     display: flex; 
     list-style: none;
     gap: 3vw; 
 }
-
+    
 #nav-upper li {
     display: inline;
 }
-
+    
 #nav-upper a {
     text-decoration: none;
     color: #848177;
     font-weight: 300; 
     font-size: 2vw; 
 }
-
+    
 #nav-upper a:hover,
 #nav-upper a:focus,
 #nav-upper a.active {
@@ -58,7 +55,7 @@ body{
     text-decoration: underline;
     text-underline-offset: 8px;
 }
-
+    
 #nav-upper i {
     font-size: 2vw;
     position: absolute;
