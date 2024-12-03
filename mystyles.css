@@ -314,7 +314,14 @@ h3{
     }
 
     .card-container {
-        width: 90%;
+        height: fit-content;
     } 
+
+    .card-hover-text {
+        padding: 10%;
+        width: 100%;
+        text-align: left;
+        font-size:1%;
+    }
 }
 
