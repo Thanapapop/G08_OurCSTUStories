@@ -248,6 +248,7 @@ h3{
         height: 50vw;
         border-top-left-radius: 2vw;
         border-top-right-radius: 2vw;
+        border-bottom-right-radius: 0;
         margin: 2vw;
         margin-bottom: 0;
         
@@ -255,7 +256,12 @@ h3{
 
     .card-container {
         margin-top: 0;
-        width: 90%;
+        width: 90vw;
+        height: 50vw;
+        margin: 2vw;
+        margin-top: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 2vw;
         order: 2;
     }
 
@@ -271,8 +277,32 @@ h3{
 
     .card img {
         width: 100%;
-        height: 50%;
+        height: 100%;
         object-fit: cover;
+    }
+
+    .card-description {
+        position: absolute;
+        font-size: 600;
+        bottom: 5vw;
+        font-size: 1.5vw;
+        color: #ffffff;
+        transition: opacity 0.3s ease;
+        text-align: center;
+        text-transform: uppercase; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .card-hover-text {
+        font-size: 1.4vw;
+        color: #333;
+        text-align: center;
+        position: absolute; 
+        top: 0%; 
+        left: 50%; 
+        transform: translate(-50%, -115%); 
+        opacity: 0;
+        transition: opacity 0.3s ease;
     }
 }
   
